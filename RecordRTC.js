@@ -1,6 +1,6 @@
 'use strict';
 
-// Last time updated: 2019-06-24 7:56:58 AM UTC
+// Last time updated: 2019-11-11 10:20:49 AM UTC
 
 // ________________
 // RecordRTC v5.5.9
@@ -4808,6 +4808,7 @@ function GifRecorder(mediaStream, config) {
         var video = document.createElement('video');
         video.muted = true;
         video.autoplay = true;
+        video.playsInline = true;
 
         isLoadedMetaData = false;
         video.onloadedmetadata = function() {
